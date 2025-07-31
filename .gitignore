@@ -1,0 +1,29 @@
+# Ignore virtual environment folders
+venv/
+ENV/
+env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Mac OS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Environment files (optional if you don't want to upload secrets)
+.env
+*.env
+
+# Streamlit temporary files
+.streamlit/config.toml
