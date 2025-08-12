@@ -58,16 +58,11 @@ A **Voting Classifier** was also implemented, but **Multinomial Naive Bayes** co
 
 ---
 
-## 🖥️ Deployment (UI)
+## 🚀 Live Demo
 
-- Built a user interface using **Streamlit**
-- Enter a message and get real-time spam prediction
+Try the model yourself on the deployed Streamlit app:  
+[SMS Spam Detection Model](https://spam-detection-model-vpb9ej6he4huwksmescaas.streamlit.app/)
 
 ---
 
-## 🚀 How to Run
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Shoaib237124/spam-detection-model.git
-   cd spam-detection-model
+Feel free to explore and test your messages for spam detection!
