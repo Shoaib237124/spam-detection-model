@@ -40,8 +40,19 @@ def transform_text(text):
             
     return ' '.join(x)
 
-tfidf = pickle.load(open('tfidf-vectorizer.pkl','rb'))
-model = pickle.load(open('spam-classifier.pkl','rb'))
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # root folder where your .py file lives
+MODEL_DIR = os.path.join(BASE_DIR, 'model')           # path to your model folder
+
+tfidf_path = os.path.join(MODEL_DIR, 'tfidf-vectorizer.pkl')
+model_path = os.path.join(MODEL_DIR, 'spam-classifier.pkl')
+
+with open(tfidf_path, 'rb') as f:
+    tfidf = pickle.load(f)
+
+with open(model_path, 'rb') as f:
+    model = pickle.load(f)
 
 st.title("Email/SMS Spam Classifier")
 
